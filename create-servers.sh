@@ -2,10 +2,11 @@
 
 NAMES=$@
 INSTANCE_TYPE=""
-IMAGE_ID=ami-03265a0778a880afb
-SECURITY_GROUP_ID=sg-0b34d8689bd628e3f
-DOMAIN_NAME=joindevops.online
-HOSTED_ZONE_ID=Z0308214GYCUYHGJHT8R
+IMAGE_ID=ami-00dcfe2cc08049310
+SECURITY_GROUP_ID=sg-05e5517fe5ae99141
+DOMAIN_NAME=joindevops.fun
+HOSTED_ZONE_ID=Z08889312X1K0HHBCNB1A
+
 
 # if mysql or mongodb instance_type should be t3.medium , for all others it is t2.micro
 
