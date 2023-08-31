@@ -23,3 +23,18 @@ do
 
     aws route53 change-resource-record-sets --hosted-zone-id $HOSTED_ZONE_ID --change-batch '
     {
+            "Changes": [{
+            "Action": "CREATE",
+                        "ResourceRecordSet": {
+                            "Name": "'$i.$DOMAIN_NAME'",
+                            "Type": "A",
+                            "TTL": 300,
+                            "ResourceRecords": [{ "Value": "'$IP_ADDRESS'"}]
+                        }}]
+    }
+    '
+done
+
+# imporvement
+# check instance is already created or not
+# check route53 record is already exist, if exist update, otherwise create route53 record
